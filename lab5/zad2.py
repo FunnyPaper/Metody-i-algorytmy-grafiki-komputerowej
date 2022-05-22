@@ -17,7 +17,6 @@ edges = np.array([[ 0, -1,  0], [-1,  4, -1], [ 0, -1,  0]]), \
         np.array([[-1, -1, -1], [-1,  8, -1], [-1, -1, -1]]), \
         np.array([[-1, -2, -1], [-2, 12, -2], [-1, -2, -1]])
 
-
 # tworzenie listy wynikowej w postaci [str, np.ndarray]
 res = [["Oryginał:", img]] + [[f"Maska\n{e}", conv2(img, e)] for e in edges]
 
